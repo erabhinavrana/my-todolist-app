@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"))
 
 // Create connection with mongodb
-// mongoose.connect("mongodb://localhost:27017/todolistDB");
-mongoose.connect("mongodb+srv://admin-abhinav:1uibxG6AazubkncD@cluster0.7hipj.mongodb.net/todolistDB");
+ mongoose.connect("mongodb://localhost:27017/todolistDB");
+//mongoose.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.7hipj.mongodb.net/todolistDB");
 // create schema in mongodb
 const itemsSchema = {
   title: String,
